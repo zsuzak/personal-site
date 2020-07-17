@@ -1,0 +1,21 @@
+.NavigationItem li {
+	margin-bottom: 0;
+}
+
+.NavigationItem a {
+	margin-bottom: 0;
+	font-weight: bold;
+	color: #333333;
+	font-family: 'Helvetica';
+	font-size: 12px;
+	margin-right: 15px;
+	box-shadow: none;
+}
+
+.NavigationItem a:hover {
+	color: #8d0018;
+}
+
+.active a {
+	text-decoration: underline;
+}
