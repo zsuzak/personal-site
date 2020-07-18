@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Toolbar from '../components/Navigation/Toolbar/Toolbar'
+import Aux from '../hoc/Aux/Aux'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -14,7 +15,7 @@ class Blog extends React.Component {
     const posts = data.allMdx.edges
 
     return (
-        <div>
+        <Aux>
           <Toolbar />
           <Layout location={this.props.location} title={siteTitle}>
             <SEO title="All posts" />
@@ -51,7 +52,7 @@ class Blog extends React.Component {
               })}
             </div>
           </Layout>
-        </div>
+        </Aux>
     )
   }
 }

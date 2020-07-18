@@ -10,6 +10,7 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.5.1",
     "@mdx-js/react": "^1.5.1",
+    "axios": "^0.19.2",
     "babel-plugin-styled-components": "^1.10.0",
     "gatsby": "^2.23.11",
     "gatsby-image": "^2.0.39",
@@ -34,6 +35,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
+    "react-image-scroller": "^0.3.0",
     "react-switch": "^5.0.0",
     "react-typography": "^0.16.19",
     "styled-components": "^4.2.0",

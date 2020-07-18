@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
+*:focus {
+    outline: none; 
+}
+
 html, body, #___gatsby {
 	height: 100%;
 	line-height: normal;
-
 }
 
 #gatsby-focus-wrapper {

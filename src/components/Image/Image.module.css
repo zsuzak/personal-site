@@ -1,0 +1,23 @@
+.Image {
+    margin: 25px 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.Image img {
+    max-width: none;
+    max-height: 375px;
+    margin: 0 50px;
+}
+
+.Image p {
+    font-family: 'Helvetica';
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .Image img {
+        max-width: 210px;
+    }
+}
