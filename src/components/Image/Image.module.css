@@ -2,6 +2,8 @@
     margin: 25px 0;
     font-size: 12px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
 }
 
 .Image img {
@@ -11,13 +13,7 @@
 }
 
 .Image p {
-    font-family: 'Helvetica';
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     font-weight: bold;
     text-align: center;
-}
-
-@media (max-width: 600px) {
-    .Image img {
-        max-width: 210px;
-    }
 }

@@ -32,7 +32,7 @@ class Blog extends React.Component {
                       <Link
                         style={{ boxShadow: `none`,
                         color: `#8d0018`,
-                        fontFamily: `Arial Black`,
+                        fontFamily: `'Arial Black', 'Arial Bold', 'Arial', 'Helvetica'`,
                         textTransform: `uppercase`,
                         fontWeight: `bold` }}
                         to={`/blog${node.fields.slug}`}
@@ -42,7 +42,7 @@ class Blog extends React.Component {
                     </h3>
                     <small>{node.frontmatter.date}</small>
                     <p 
-                      style={{fontFamily: `Georgia`}}
+                      style={{fontFamily: `'Georgia', 'Baskerville', 'serif'`}}
                       dangerouslySetInnerHTML={{
                         __html: node.frontmatter.description || node.excerpt,
                       }}
