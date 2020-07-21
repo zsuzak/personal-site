@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
-
 import axios from 'axios'
-import Image from '../../components/Image/Image'
-import classes from './Gallery.module.css'
-
 import ImageScroller from 'react-image-scroller'
+
+import Aux from '../../hoc/Aux/Aux'
+import Image from '../../components/Image/Image'
+import Description from '../../components/Text/Description/Description'
+import classes from './Gallery.module.css'
 
 class Gallery extends Component {
     state = {
@@ -22,7 +23,7 @@ class Gallery extends Component {
                 this.setState({images: pics})
             })
             .catch(err => {
-                console.log(err)
+                this.setState({error: true})
             })
     }
 
@@ -33,13 +34,18 @@ class Gallery extends Component {
 
     render () {
         return (
-            <div className={this.state.filter ? classes.on : classes.off}>
-                <ImageScroller>
-                    {this.state.images.map(image => {
-                            return <Image clicked={this.filterToggle} key={image.id} source={image.url_l} dateTaken={image.datetaken} />
-                        })}
-                </ImageScroller>
-            </div>
+            <Aux>
+                <Description />
+
+                <div className={this.state.filter ? classes.on : classes.off}>
+                    <ImageScroller>
+                        {this.state.images.map(image => {
+                                return <Image clicked={this.filterToggle} key={image.id} source={image.url_l} dateTaken={image.datetaken} />
+                            })}
+                    </ImageScroller>
+                </div>
+            </Aux>
+            
         )
     }
 }

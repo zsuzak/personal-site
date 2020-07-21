@@ -1,5 +1,4 @@
 .Image {
-    margin: 25px 0;
     font-size: 12px;
     font-weight: bold;
     display: flex;
@@ -16,4 +15,5 @@
     font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     font-weight: bold;
     text-align: center;
+    color: #8d0018;
 }

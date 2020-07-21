@@ -1,0 +1,52 @@
+.About {
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.About h1 {
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-size: 3.5em;
+    margin: 15px 10px;
+}
+
+.About h2 {
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 1.5;
+    margin: 15px 10px;
+
+}
+
+.About p {
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin: 15px 10px;
+}
+
+.fill {
+    height: 3px;
+    width: 10%;
+    background-color: #8d0018;
+}
+
+.links {
+    margin: 15px 10px;
+    display: flex;
+    min-width: 20%;
+    justify-content: space-evenly;
+}
+
+.links a {
+    box-shadow: none;
+}
+
+@media (max-width: 660px) {
+    .links {
+        width: 40%;
+    }
+}

@@ -8,6 +8,7 @@ import React from "react"
 import '../styles/global.css'
 import Home from '../containers/Home/Home'
 import Toolbar from '../components/Navigation/Toolbar/Toolbar'
+import About from '../components/Text/About/About'
 
 class AboutPage extends React.Component {
   render() {
@@ -15,7 +16,7 @@ class AboutPage extends React.Component {
     return (
       <Home>
           <Toolbar />
-          <p style={{textAlign: `center`, marginTop: `50px`}}>Temp about page, will change later...</p>
+          <About />
       </Home>
     )
   }
