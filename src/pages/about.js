@@ -8,7 +8,7 @@ import React from "react"
 import '../styles/global.css'
 import Home from '../containers/Home/Home'
 import Toolbar from '../components/Navigation/Toolbar/Toolbar'
-import About from '../components/Text/About/About'
+import About from '../components/About/About'
 
 class AboutPage extends React.Component {
   render() {
