@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import ImageScroller from 'react-image-scroller'
+import LazyLoad from 'react-lazyload';
 
 import Aux from '../../hoc/Aux/Aux'
 import Image from '../../components/Image/Image'
-import Description from '../../components/Text/Description/Description'
+import Description from '../../components/Description/Description'
 import classes from './Gallery.module.css'
 
 class Gallery extends Component {
@@ -40,7 +41,9 @@ class Gallery extends Component {
                 <div className={this.state.filter ? classes.on : classes.off}>
                     <ImageScroller>
                         {this.state.images.map(image => {
-                                return <Image clicked={this.filterToggle} key={image.id} source={image.url_l} dateTaken={image.datetaken} />
+                                return <LazyLoad>
+                                        <Image clicked={this.filterToggle} key={image.id} source={image.url_l} dateTaken={image.datetaken} />
+                                    </LazyLoad>
                             })}
                     </ImageScroller>
                 </div>

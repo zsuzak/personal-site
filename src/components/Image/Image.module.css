@@ -1,5 +1,4 @@
 .Image {
-    font-size: 12px;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -7,7 +6,7 @@
 
 .Image img {
     max-width: none;
-    max-height: 375px;
+    max-height: 320px;
     margin: 0 50px;
 }
 
@@ -16,4 +15,5 @@
     font-weight: bold;
     text-align: center;
     color: #8d0018;
+    font-size: 0.75em;
 }

@@ -36,6 +36,7 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
     "react-image-scroller": "^0.3.0",
+    "react-lazyload": "^3.0.0",
     "react-switch": "^5.0.0",
     "react-typography": "^0.16.19",
     "social-media-icons-react": "^1.0.10",
