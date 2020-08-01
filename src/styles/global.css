@@ -33,3 +33,7 @@ small {
 .active {
 	text-decoration: underline;
 }
+
+a {
+	box-shadow: none;
+}
