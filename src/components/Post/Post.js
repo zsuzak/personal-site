@@ -17,8 +17,7 @@ const Post = (props) => {
                 <CardActionArea>
                     <CardMedia
                     className={classes.media}
-                    image={"https://images.unsplash.com/photo-1556056504-5c7696c4c28d?ixlib=rb-1.2.1&auto=format&fit=crop&w=2683&q=80"}
-                    title="Temp static"
+                    image={`../../${props.source.substring(1,props.source.length-1)}.jpg`}
                     />
                     <CardContent className={classes.content}>
                         <Typography gutterBottom variant="h5" component="h2">

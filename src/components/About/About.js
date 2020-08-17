@@ -10,7 +10,7 @@ const variants = {
 }
 
 const about = () => (
-    <motion.div transition={{ ease: "easeOut", duration: 4 }} initial="hidden" animate="visible" variants={variants} className={classes.container}>
+    <motion.div transition={{ ease: "easeOut", duration: 2 }} initial="hidden" animate="visible" variants={variants} className={classes.container}>
         <div className={classes.About}>
                 <h1>Hi, I'm Zak</h1>
             

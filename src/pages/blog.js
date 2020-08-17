@@ -21,7 +21,7 @@ class Blog extends React.Component {
               {posts.map(({ node }) => {
                 const title = node.frontmatter.title || node.fields.slug
                 return (
-                  <Post title={title} desc={node.frontmatter.description || node.excerpt} link={`/blog${node.fields.slug}`} date={node.frontmatter.date}/>
+                  <Post title={title} desc={node.frontmatter.description || node.excerpt} link={`/blog${node.fields.slug}`} date={node.frontmatter.date} source={node.fields.slug}/>
                 )
               })}
           </Layout>
@@ -49,7 +49,6 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
-            description
           }
         }
       }

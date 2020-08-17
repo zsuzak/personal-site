@@ -23,20 +23,23 @@ class BlogPostTemplate extends React.Component {
             description={post.frontmatter.description || post.excerpt}
           />
           <h1 style={{
-            fontFamily: `Arial Black`,
-            textTransform: `uppercase`,
-            // fontWeight: `bold`,
-            color: `#8d0018`
+            fontFamily: `Helvetica Neue`,
+            fontWeight: `bold`,
+            color: `#8d0018`,
+            fontSize: `3em`
           }}>
             {post.frontmatter.title}
           </h1>
           <p
             style={{
               ...scale(-1 / 5),
-              fontFamily: `Comfortaa`,
+              fontFamily: `Helvetica Neue`,
+              textTransform: `uppercase`,
+              color: `#8d0018`,
               display: `block`,
-              marginBottom: rhythm(1),
+              paddingBottom: `15px`,
               marginTop: rhythm(-1),
+              borderBottom: `1px solid #ccccc3`
             }}
           >
             {post.frontmatter.date}
