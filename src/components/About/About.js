@@ -4,13 +4,8 @@ import { motion } from 'framer-motion'
 import {SocialMediaIconsReact} from 'social-media-icons-react'
 import classes from './About.module.css'
 
-const variants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1, y: -10 }
-}
-
 const about = () => (
-    <motion.div transition={{ ease: "easeOut", duration: 2 }} initial="hidden" animate="visible" variants={variants} className={classes.container}>
+    <div className={classes.container}>
         <div className={classes.About}>
                 <h1>Hi, I'm Zak</h1>
             
@@ -48,7 +43,7 @@ const about = () => (
             </div>
 
         </div>
-    </motion.div>
+    </div>
 
 
 )
