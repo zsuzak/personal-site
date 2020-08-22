@@ -1,12 +1,146 @@
-.root {
+.card {
+    font-family: 'Helvetica Neue';
+    display: flex;
+    flex-direction: column;
     background-color: #f6f5e9;
-    margin-bottom: 25px;
+    box-shadow: 1px 0.1rem 0.1rem rgba(0,0,0,0.3);
+    margin-bottom: 15px;
 }
 
-.media {
-    height: 200px;
+.imageData {
+    height: 15rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
 }
 
-.content {
-    background-color: #f6f5e9;
+.backgroundImage {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: transform 3s;
+}
+
+.card:hover .backgroundImage {
+    transform: scale(1.1);
+}
+
+.publicationDetails {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right bottom, rgba(237, 235, 224,.5), rgba(246, 245, 233,.5));
+    font-size: 0.75rem;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+}
+
+.publicationDetails span {
+    display: block;
+}
+
+.postData {
+    margin: 0;
+    padding: 0.75rem;
+}
+
+.title {
+    margin: 10px 0;
+    
+    font-size: 1.5rem;
+    font-family: 'Helvetica Neue';
+    color: #8d0018;
+}
+
+.description {
+    color: #4b4546;
+    position: relative;
+    margin: 0;
+}
+
+.description::first-letter {
+    margin-left: 0.5rem;
+}
+
+.description::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0.25rem;
+    height: 1.1rem;
+    background: #d9d8ce;
+    border-radius: 0.25rem;
+}
+
+.readMore {
+    margin: 0;
+    text-align: right;
+    font-weight: bold;
+    margin-top: 1rem;
+    color: #4b4546;
+}
+
+.readMore p {
+    position: relative;
+    display:inline-block;
+}
+
+.readMore p::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -.25rem;
+    width: 100%;
+    height: 2px;
+    background: #8d0018;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .5s;
+}
+
+.readMore p:hover::before{
+    transform: scaleX(1);
+}
+
+@media (min-width: 600px) {
+    .card {
+        flex-direction: row;
+        max-width: 75rem;
+    }
+
+    .imageData {
+        flex-basis: 40%;
+        height: unset;
+    }
+
+    .postData {
+        flex-basis: 60%;
+    }
+
+    .publicationDetails {
+        transform: translateX(-100%);
+        transition: transform .5s;
+    }
+
+    .card:hover .publicationDetails {
+        transform: translateX(0);
+    }
+
+    .card span {
+        opacity: 0;
+        transition: all .5s .3s;
+    }
+
+    .card:hover span {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }

@@ -1,19 +1,37 @@
 .Image {
-    font-weight: bold;
-    display: flex;
-    align-items: center;
+    max-height: 250px;
+    margin: 0 3px;
+    margin-bottom: 6px;
+    position: relative;
+    z-index: 1;
+    display:block;
 }
 
 .Image img {
-    max-width: none;
-    max-height: 320px;
-    margin: 0 50px;
+    max-height: 250px;
+    z-index: -1;
+    margin: 0;
+    vertical-align: middle;
 }
 
-.Image p {
-    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+.date {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Helvetica Neue';
     font-weight: bold;
-    text-align: center;
-    color: #8d0018;
-    font-size: 0.75em;
+    font-size: 0.8rem;
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+    color: #ffffff;
+}
+
+.Image:hover .date {
+	opacity: 1;
 }

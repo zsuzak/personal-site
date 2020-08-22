@@ -13,8 +13,10 @@ class Layout extends React.Component {
       <h3
         style={{
           fontSize: `5vh`,
-          fontFamily: `Georgia, sans-serif`,
+          fontFamily: `Audiowide, sans-serif`,
+          textAlign: `center`,
           marginTop: 0,
+          color:`#333333`
         }}
       >
         <Link
@@ -49,7 +51,6 @@ class Layout extends React.Component {
 }
 
 const Wrapper = styled.div`
-  min-height: 100vh;
 `
 
 export default Layout

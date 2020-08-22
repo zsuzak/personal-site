@@ -8,7 +8,6 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
-    "@material-ui/core": "^4.11.0",
     "@mdx-js/mdx": "^1.5.1",
     "@mdx-js/react": "^1.5.1",
     "axios": "^0.19.2",
@@ -37,8 +36,6 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
-    "react-image-scroller": "^0.3.0",
-    "react-lazyload": "^3.0.0",
     "react-switch": "^5.0.0",
     "react-typography": "^0.16.19",
     "social-media-icons-react": "^1.0.10",

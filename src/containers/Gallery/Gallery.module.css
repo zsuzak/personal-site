@@ -1,3 +1,12 @@
+.Description {
+    margin: 15px 0;
+    line-height: normal;
+    font-size: 1em;
+    color: #333333;
+    font-family: 'Helvetica Neue', cursive;
+    text-align: center;
+}
+
 .on {
     filter: grayscale(100%);
     transition: 0.5s ease;

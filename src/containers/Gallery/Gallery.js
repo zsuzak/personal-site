@@ -1,11 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import ImageScroller from 'react-image-scroller'
-import LazyLoad from 'react-lazyload';
 
 import Aux from '../../hoc/Aux/Aux'
 import Image from '../../components/Image/Image'
-import Description from '../../components/Description/Description'
 import classes from './Gallery.module.css'
 
 class Gallery extends Component {
@@ -36,16 +33,16 @@ class Gallery extends Component {
     render () {
         return (
             <Aux>
-                <Description />
+                <p className={classes.Description}>
+                    Novice photography taken from my smartphone at the time. <br/>
+                    Prior to 2020 taken on a Samsung S6, then on an iPhone XS. <br/>
+                    Clicking on a photo toggles the grayscale filter.
+                </p>
 
-                <div className={this.state.filter ? classes.on : classes.off}>
-                    <ImageScroller>
-                        {this.state.images.map(image => {
-                                return <LazyLoad>
-                                        <Image clicked={this.filterToggle} key={image.id} source={image.url_l} dateTaken={image.datetaken} />
-                                    </LazyLoad>
-                            })}
-                    </ImageScroller>
+                <div className={this.state.filter ? classes.on : classes.off} style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center'}}>
+                    {this.state.images.map(image => {
+                            return <Image clicked={this.filterToggle} key={image.id} source={image.url_l} dateTaken={image.datetaken} />
+                        })}
                 </div>
             </Aux>
             
