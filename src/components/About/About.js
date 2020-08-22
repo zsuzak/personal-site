@@ -30,15 +30,15 @@ const about = () => (
             
             <div className={classes.links}>
                 <motion.div whileHover={{ translateY: -5 }}>
-                        <SocialMediaIconsReact size={"44px"} backgroundColor="#333333" icon="mail" url="mailto:zakariyya.s.uddin@gmail.com"/>
+                        <SocialMediaIconsReact borderWidth={0} size={"44px"} backgroundColor="#333333" icon="mail" url="mailto:zakariyya.s.uddin@gmail.com"/>
                 </motion.div>
 
                 <motion.div whileHover={{ translateY: -5 }}>
-                        <SocialMediaIconsReact size={"44px"} backgroundColor="#333333" icon="github" url="https://www.github.com/zsuzak"/>
+                        <SocialMediaIconsReact borderWidth={0} size={"44px"} backgroundColor="#333333" icon="github" url="https://www.github.com/zsuzak"/>
                 </motion.div>
                 
                 <motion.div whileHover={{ translateY: -5 }}>
-                        <SocialMediaIconsReact size={"44px"} backgroundColor="#333333" icon="instagram" url="https://www.instagram.com/zakzsu"/>
+                        <SocialMediaIconsReact borderWidth={0} size={"44px"} backgroundColor="#333333" icon="instagram" url="https://www.instagram.com/zakzsu"/>
                 </motion.div>
             </div>
 

@@ -51,7 +51,6 @@
     display: flex;
     min-width: 40%;
     justify-content: space-evenly;
-    border: none;
 }
 
 .links a {
