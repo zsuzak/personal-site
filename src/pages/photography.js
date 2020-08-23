@@ -1,10 +1,6 @@
 import React from "react"
-// import { Link } from "gatsby"
 
-// import Layout from "../components/layout"
-// import SEO from "../components/seo"
-// import Button from "../components/button"
-
+import SEO from "../components/seo"
 import Aux from '../hoc/Aux/Aux'
 import '../styles/global.css'
 import Gallery from '../containers/Gallery/Gallery'
@@ -15,6 +11,7 @@ class PhotographyPage extends React.Component {
 
     return (
       <Aux>
+          <SEO title="Photography" />
           <Toolbar />
           <Gallery />    
       </Aux>

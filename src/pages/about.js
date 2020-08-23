@@ -1,10 +1,6 @@
 import React from "react"
-// import { Link } from "gatsby"
 
-// import Layout from "../components/layout"
-// import SEO from "../components/seo"
-// import Button from "../components/button"
-
+import SEO from "../components/seo"
 import '../styles/global.css'
 import Home from '../containers/Home/Home'
 import Toolbar from '../components/Navigation/Toolbar/Toolbar'
@@ -15,6 +11,7 @@ class AboutPage extends React.Component {
 
     return (
       <Home>
+          <SEO title="About" />
           <Toolbar />
           <About />
       </Home>

@@ -5,6 +5,11 @@
     align-items: center;
     justify-content: space-between;
     border-bottom: 2px solid #f6f5e9;
+
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
 }
 
 .Toolbar h2 {

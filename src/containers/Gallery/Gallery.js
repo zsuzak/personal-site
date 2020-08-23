@@ -34,9 +34,9 @@ class Gallery extends Component {
         return (
             <Aux>
                 <p className={classes.Description}>
-                    Novice photography taken from my smartphone at the time. <br/>
-                    Prior to 2020 taken on a Samsung S6, then on an iPhone XS. <br/>
-                    Clicking on a photo toggles the grayscale filter.
+                    Photos taken on my smartphone at the time<br/>
+                    Prior to 2020 taken on a Samsung S6, then on an iPhone XS<br/>
+                    Clicking on a photo toggles the grayscale filter
                 </p>
 
                 <div className={this.state.filter ? classes.on : classes.off} style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center'}}>

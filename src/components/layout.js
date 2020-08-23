@@ -15,8 +15,8 @@ class Layout extends React.Component {
           fontSize: `5vh`,
           fontFamily: `Audiowide, sans-serif`,
           textAlign: `center`,
-          marginTop: 0,
-          color:`#333333`
+          marginTop: 50,
+          color:`#333333`,
         }}
       >
         <Link
